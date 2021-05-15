@@ -31,7 +31,6 @@ namespace YouTubeChat_viewer
         {
             this.link_btn = new System.Windows.Forms.Button();
             this.settings = new System.Windows.Forms.Button();
-            this.close = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // link_btn
@@ -60,29 +59,15 @@ namespace YouTubeChat_viewer
             this.settings.UseVisualStyleBackColor = false;
             this.settings.Click += new System.EventHandler(this.settings_Click);
             // 
-            // close
-            // 
-            this.close.BackColor = System.Drawing.Color.Moccasin;
-            this.close.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.close.Font = new System.Drawing.Font("Alien League", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.close.Location = new System.Drawing.Point(452, 11);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(214, 29);
-            this.close.TabIndex = 2;
-            this.close.Text = "Close";
-            this.close.UseVisualStyleBackColor = false;
-            this.close.Click += new System.EventHandler(this.close_Click);
-            // 
             // InitialDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
-            this.ClientSize = new System.Drawing.Size(678, 50);
-            this.Controls.Add(this.close);
+            this.ClientSize = new System.Drawing.Size(460, 50);
             this.Controls.Add(this.settings);
             this.Controls.Add(this.link_btn);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "InitialDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InitialDialog";
@@ -94,6 +79,5 @@ namespace YouTubeChat_viewer
 
         private System.Windows.Forms.Button link_btn;
         private System.Windows.Forms.Button settings;
-        private System.Windows.Forms.Button close;
     }
 }
